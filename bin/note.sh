@@ -1,4 +1,6 @@
 #!/bin/bash
 NOTEFILE=$HOME/SparkleShare/devjournal/devjournal.markdown
-COMMAND="call Note_add()"
-gvim -c"$COMMAND" "$NOTEFILE" -c"$" 
+FILENAME=`basename $NOTEFILE`
+VIMCOMMAND="call Note_add()"
+
+wmctrl -a $FILENAME || gvim -c"$VIMCOMMAND" "$NOTEFILE" -c"$" 

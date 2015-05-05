@@ -1,5 +1,5 @@
 #!/bin/bash
-NOTEFILE=$HOME/SparkleShare/devjournal/devjournal.markdown
+NOTEFILE=$HOME/SparkleShare/devjournal/`hostname`/devjournal.markdown
 FILENAME=`basename $NOTEFILE`
 VIMCOMMAND="call Note_add()"
 
